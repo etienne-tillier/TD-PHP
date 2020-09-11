@@ -1,0 +1,29 @@
+Que fait le gestionnaire de fichier quand on double-clique ?
+
+IL ouvre une page internet
+
+Que signifie le file au début de l’URL ?
+
+C'est pour indiquer le chemin d'accès à la page html dans le gestionnaire de fichier
+
+Est-ce que la page HTML s’affiche correctement ?
+
+Oui, elle s'affiche correctement
+
+Est-ce qu’il y a une communication entre un serveur et un client HTTP ?
+
+Non, car le fichier est chez nous, il n'est pas héberger sur un serveur web
+
+Est-ce que la page HTML s’affiche correctement ?
+
+Oui
+
+Est-ce qu’il y a une communication entre un serveur et un client HTTP maintenant ?
+
+Oui
+
+
+Que se passe-t-il quand on ouvre un fichier PHP directement dans le navigateur ?
+
+Le navigateur nous demande de télécharger le fichier echo.php, car il ne le comprend pas étant donné que cela ne passe pas par le serveur. Si cela passe par le serveur, alors ce dernier reconnait le php et le "traduit" afin de nous afficher l'html.
+
