@@ -27,3 +27,45 @@ Que se passe-t-il quand on ouvre un fichier PHP directement dans le navigateur ?
 
 Le navigateur nous demande de télécharger le fichier echo.php, car il ne le comprend pas étant donné que cela ne passe pas par le serveur. Si cela passe par le serveur, alors ce dernier reconnait le php et le "traduit" afin de nous afficher l'html.
 
+Exercice 4 : 
+
+Cela affiche : 
+
+Bonjour Marc
+Bonjour Marc
+Bonjour $prenom
+Marc
+$prenom
+
+Exercice 5 : 
+ 1)
+          $marque = "mercedes";
+          $couleur = "bleue";
+          $immatriculation = "84dz87";
+2)
+          echo "Voiture $immatriculation de marque $marque (couleur $couleur)";
+
+3)
+
+         $voiture = array (
+            'marque' => 'mercedes',
+            'couleur' => 'rouge',
+            'immatriculation' => '87de95');
+
+          echo "Voiture $voiture[immatriculation] de marque $voiture[marque](couleur $voiture[couleur])";
+
+4)   print_r($voiture);
+
+5)
+          echo "<h2> Tableau des voitures </h2> <br>";
+          foreach ($tableau_voiture as $int => $value) {
+            echo "<ul>";
+            foreach ($value as $key => $stats) {
+              echo "<li> $key = $stats </li>";
+            }
+            echo "</ul>";
+          }
+
+
+
+
