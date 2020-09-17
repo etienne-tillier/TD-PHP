@@ -8,6 +8,7 @@
 	<?php 
 	require_once("voiture.php");
 	$voiture1 = new voiture("Mercedes","rouge","784dz87z");
+	echo($voiture1->afficher());
 	 ?>
 </body>
 </html>

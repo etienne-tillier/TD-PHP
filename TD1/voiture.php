@@ -46,10 +46,10 @@ class Voiture {
   // une methode d'affichage.
   public function afficher() {
     // À compléter dans le prochain exercice
-    return "La voiture : <br><ul>
-            <li>$this->getImmatriculation</li>
-            <li>$this->getMarque</li>
-            <li>$this->getCouleur</li></ul><br>";
+    return 'La voiture : <br><ul>
+            <li> ' . $this->getImmatriculation(). '</li>
+            <li> ' . $this->getMarque(). '</li>
+            <li> ' . $this->getCouleur().' </li></ul><br>';
   }
 }
 ?>
