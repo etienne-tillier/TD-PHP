@@ -26,10 +26,12 @@
                  die();
             }   
 
-            Model::Init();
         }
         
+            
 
     }
+    
+    Model::Init();
 
 ?>
