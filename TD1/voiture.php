@@ -36,12 +36,15 @@ class Voiture {
   }
   }
       
+ 
   // un constructeur
+  /*
   public function __construct($m, $c, $i)  {
    $this->marque = $m;
    $this->couleur = $c;
    $this->immatriculation = $i;
   } 
+  */
            
   // une methode d'affichage.
 public function __construct($m = NULL, $c = NULL, $i = NULL) {
