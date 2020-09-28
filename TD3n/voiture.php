@@ -70,13 +70,21 @@ class Voiture {
   }
 
   public static function getAllVoitures(){
-     $rep = (Model::$pdo)->query("SELECT * FROM Voiture");
-     $rep->setFetchMode(PDO::FETCH_CLASS, 'Voiture');
-     $tab_voit = $rep->fetchAll();
-     return $tab_voit;
+      
+       try{
+         $rep = (Model::$pdo)->query("SELECT * FROM Voiture");
+         $rep->setFetchMode(PDO::FETCH_CLASS, 'Voiture');
+         $tab_voit = $rep->fetchAll();
+         return $tab_voit;
+            }   
+            catch(PDOException $e) {
+                echo $e->getMessage();
+            }
   }
 
   public static function getVoitureByImmat($immat) {
+      
+    try{
     $sql = "SELECT * from Voiture WHERE immatriculation=:nom_tag";
     // Préparation de la requête
     $req_prep = Model::$pdo->prepare($sql);
@@ -95,15 +103,24 @@ class Voiture {
     if (empty($tab_voit))
         return false;
     return $tab_voit[0];
+    }
+    catch (PDOException $e){
+        echo $e->getMessage();
+    }
 }
 
 public function save(){
+    try{
     $marque = $this->getMarque();
     $couleur = $this->getCouleur();
     $immat = $this->getImmatriculation();
     $sql = "INSERT INTO Voiture(immatriculation,marque,couleur) VALUES('$immat','$marque','$couleur')";
     
     (Model::$pdo)->query($sql);
+    }
+    catch(PDOException $e){
+        echo $e->getMessage();
+    }
     
 }
 

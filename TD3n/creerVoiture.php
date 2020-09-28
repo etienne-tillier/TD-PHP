@@ -17,11 +17,13 @@
 
         <?php
 
-        require_once('Voiture.php');
+        require_once('voiture.php');
 
-        $voiture1 = new Voiture($_POST['Marque'],$_POST['Couleur'],$_POST['immatriculation']);
+        $voiture1 = new Voiture($_GET['Marque'],$_GET['Couleur'],$_GET['immatriculation']);
 
         $voiture1->afficher();
+        
+        $voiture1->save();
 
         ?>
 
