@@ -30,7 +30,6 @@
     
     $voiture = new Voiture("Peugeot","Rose","CAZd8A98");
     $voiture2 = new Voiture("AUDI","Rose-Fluo","ad8a6da8");
-    $voiture2->save();
     
     
     echo "</br></br>";
