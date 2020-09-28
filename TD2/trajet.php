@@ -53,8 +53,7 @@
     		  return $tab_traj;
 		}
 	}
-=======
-<?php
+
 
 	require_once 'Model.php';
 
@@ -108,5 +107,5 @@
     		  return $tab_traj;
 		}
 	}
->>>>>>> 8c7f5cb45618bcd58868e33080f1d170b1c41e3c
+
 ?>

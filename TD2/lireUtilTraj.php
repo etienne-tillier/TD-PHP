@@ -19,9 +19,6 @@ foreach (trajet::getAllTrajets() as $value) {
 	echo($value->afficher());
 }
 
-
-=======
-<?php
 	require_once 'Model.php';
 	require_once 'utilisateur.php';
 	require_once 'trajet.php';
@@ -42,5 +39,4 @@ foreach (trajet::getAllTrajets() as $value) {
 }
 
 
->>>>>>> 8c7f5cb45618bcd58868e33080f1d170b1c41e3c
 ?>
