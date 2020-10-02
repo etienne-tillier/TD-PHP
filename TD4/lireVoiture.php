@@ -18,7 +18,6 @@
     */
 
     echo "Q8 </br></br>";
-    
 
 
     foreach (voiture::getAllVoitures() as $value) {
