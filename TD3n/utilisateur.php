@@ -34,7 +34,7 @@
 	}
 
 	public function afficher(){
-		return "Utilisateur : </br><ul>
+		return "<ul>Utilisateur : </br></br>
 				<li> login : $this->login </li></br>
 				<li> prenom : $this->prenom </li></br>
 				<li> nom : $this->nom </li></br></ul>";
