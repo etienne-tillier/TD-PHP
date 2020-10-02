@@ -28,8 +28,11 @@
     
     echo(Voiture::getVoitureByImmat("CAAZD4A7")->afficher());
     
-    $voiture = new Voiture("Peugeot","Rose","CAZd8A98");
+    $voiture = new Voiture("Jaguar","Bleue","8889923");
     $voiture2 = new Voiture("AUDI","Rose-Fluo","ad8a6da8");
+    $voiture3 = new Voiture("test","test","a8adddazaz");
+    
+    $voiture3->save();
     
     
     echo "</br></br>";
