@@ -22,5 +22,10 @@ class ControllerVoiture {
         require ('../view/voiture/create.php');
     }
     
+    public static function created(){
+        $voit = new ModelVoiture($_GET["Marque"],$_GET["Couleur"],$_GET["immatriculation"]);
+        $voit->save();
+        ControllerVoiture::readAll();
+    }
 }
 ?>

@@ -6,10 +6,11 @@
     </head>
    
     <body>
-        <form method="get" action="creerVoiture.php">
+        <form method="get" action="routeur.php?">
           <fieldset>
             <legend>Mon formulaire :</legend>
             <p>
+              <input type='hidden' name='action' value='created'>
               <label for="immat_id">Immatriculation</label> :
               <input type="text" placeholder="Ex : 256AB34" name="immatriculation" id="immat_id" required/>
             </p>
