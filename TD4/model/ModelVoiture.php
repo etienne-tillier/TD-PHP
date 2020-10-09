@@ -2,7 +2,7 @@
 
 require_once 'Model.php';
 
-class Voiture {
+class ModelVoiture {
 
     private $marque;
     private $couleur;
@@ -58,19 +58,20 @@ class Voiture {
     }
 
     // une methode d'affichage.
-    public function afficher() {
+   /* public function afficher() {
         // À compléter dans le prochain exercice
         return 'La voiture : <br><ul>
             <li> ' . $this->getImmatriculation() . '</li>
             <li> ' . $this->getMarque() . '</li>
             <li> ' . $this->getCouleur() . ' </li></ul><br>';
     }
+    */
 
     public static function getAllVoitures() {
 
         try {
             $rep = (Model::$pdo)->query("SELECT * FROM Voiture");
-            $rep->setFetchMode(PDO::FETCH_CLASS, 'Voiture');
+            $rep->setFetchMode(PDO::FETCH_CLASS, 'ModelVoiture');
             $tab_voit = $rep->fetchAll();
             return $tab_voit;
         } catch (PDOException $e) {
@@ -93,7 +94,7 @@ class Voiture {
             $req_prep->execute($values);
 
             // On récupère les résultats comme précédemment
-            $req_prep->setFetchMode(PDO::FETCH_CLASS, 'Voiture');
+            $req_prep->setFetchMode(PDO::FETCH_CLASS, 'ModelVoiture');
             $tab_voit = $req_prep->fetchAll();
             // Attention, si il n'y a pas de résultats, on renvoie false
             if (empty($tab_voit))
